@@ -7,7 +7,7 @@
     "build": "npx tsc",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "postinstall": "cd ../client/MerchantAppFrontend && npm install && npm run build"
+    "postinstall": "cd ${npm_config_prefix}/client/MerchantAppFrontend && npm install && npm run build"
   },
   "keywords": [],
   "author": "",

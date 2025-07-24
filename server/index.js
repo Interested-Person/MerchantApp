@@ -8,7 +8,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 const path_1 = __importDefault(require("path"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 1000;
+const PORT = process.env.PORT || 10000;
 app.use(express_1.default.static(path_1.default.join(__dirname, '../client/MerchantAppFrontend/dist')));
 app.get("/api", (req, res) => {
     res.send("hey");
